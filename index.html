@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioJuris</title>
+    <link rel="stylesheet" href="style.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<!-- fonts 13:20-->
+<section class="header">
+    <video autoplay loop muted plays-inline class="back-video" id="myVideo">
+        <source src="images/banner.mp4" type="video/mp4">
+    </video>
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a href="Home">Plan</a></li>
+                <li><a href="Home">Current Laws</a></li>
+                <li><a href="Home">Petition</a></li>
+                <li><a href="Home">Contacts</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <p>We abuse land because we regard it as a commodity belonging to us. When we see land as a community to which we belong, we may begin to use it with love and respect.</p>
+        <a href="" class="btn">See our plan</a>
+    </div>
+</section>
+<section class="plan">
+    <h1>We plan to change the way laws protect land</h1>
+    <p>We propose a reformulation of the laws by implementing stricter measures to sanction individuals who repeatedly violate the rules. We advocate for the implementation of fines ranging from one thousand to ten thousand lei depending on the extent of damage to nature. Additionally, for violations of significant proportions, we suggest imposing sentences ranging from one to three years of imprisonment, as well as community service for those who deviate from the law</p>
+</section>
+
+<section class="laws">
+    <h1>Current Laws</h1>
+    <div class="container">
+        <div class="row">
+            <div class="law-col">
+                <p>(a) the priority of environmental protection goals and activities within the framework of achieving the economic and social-human interests of the population for the present and the future;</p>
+            </div>
+            <div class="law-col">
+                <p>(b) the obligation to enforce the legislation on environmental protection, compliance with standards, regulations and permissible limits on the use of natural resources and energy, on the application of chemical, physical and biological factors on environmental components, on harmful emissions and discharges, on the disposal of waste from economic activities;</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="law-col">
+                <p>(c) the responsibility of all natural and legal persons for damage caused to the environment; the prevention, limitation and combating of pollution, as well as the recovery of damage caused to the environment and its components on behalf of natural and legal persons who have admitted (even unconsciously or negligently) the damage;</p>
+            </div>
+            <div class="law-col">
+                <p>(d) The transfer of the right of ownership and use of natural resources to natural and legal persons does not exempt the beneficiaries of these rights from compliance with environmental protection legislation.</p>
+            </div>
+        </div>
+        <div class="row-centered">
+            <div class="law-col">
+                <p>(e) The State Environmental Inspectorate has the right to request written explanations from natural and legal persons for each case of violation by them of environmental protection legislation</p>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section class="petition">
+    <h1>Sign the petition</h1>
+    <input type="text" class="textbox" placeholder="Petition">
+    
+</section>
+
+
+<section class="contacts">
+    <h1>Contacts</h1>
+    <div class="contact-section">
+        <div class="contact-details">
+            <span class="contact-label">Organization Name:</span>
+            <span class="contact-value">BioJuris</span>
+        </div>
+        <div class="contact-details">
+            <span class="contact-label">Email:</span>
+            <span class="contact-value">biojuris@gmail.com</span>
+        </div>
+        <div class="contact-details">
+            <span class="contact-label">Phone:</span>
+            <span class="contact-value">+1234567890</span>
+        </div>
+        <div class="separator"></div>
+        <div class="contact-details">
+            <span class="contact-label">Address:</span>
+            <span class="contact-value">123 Main Street, Cityville, State, Zip</span>
+        </div>
+        <div class="contact-details">
+            <span class="contact-label">Website:</span>
+            <span class="contact-value">www.biojuris.com</span>
+        </div>
+        <div class="contact-details">
+            <span class="contact-label">Social:</span>
+            <span class="contact-value">
+                <a href="https://www.facebook.com/example" target="_blank">Facebook</a>, 
+                <a href="https://twitter.com/example" target="_blank">Twitter</a>, 
+                <a href="https://www.linkedin.com/in/example" target="_blank">LinkedIn</a>
+            </span>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+   var navLinks = document.getElementById("navLinks");
+   
+   function showMenu(){
+    navLinks.style.right ="0";
+   }
+
+   function hideMenu(){
+    navLinks.style.right ="-200px";
+   }
+   var video = document.getElementById("myVideo");
+
+// Function to change playback speed
+function changeSpeed(speed) {
+  // Set the playback rate
+  video.playbackRate = speed;
+}
+
+// Example usage: Change playback speed to 1.5x
+changeSpeed(0.75);
+</script>
+</body>
+</html>
