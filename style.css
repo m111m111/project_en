@@ -19,6 +19,7 @@ h1{
     bottom: 0;
     z-index: -1;
 }
+/*Navbar*/
 nav{
     display: flex;
     padding: 0% 3%;
@@ -26,7 +27,7 @@ nav{
     align-items: center;
 }
 nav img{
-    width: 150px;
+    width: 200px;
 }
 .nav-links{
     flex: 1;
@@ -47,7 +48,7 @@ nav img{
     content: "";
     width: 0%;
     height: 2px;
-    background: #3b6f4c;
+    background: #ff5500;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -64,10 +65,10 @@ nav img{
     transform: translate(-50%,-50%);
     text-align: center;
 }
-.text-box p{
-    margin: 10px 0 40px;
-    font-size: 35px;
-    line-height: 35px;
+.index-caption{
+    margin: 75px;
+    font-size: 45px;
+    line-height: 45px;
     color: #fff;
 }
 .btn{
@@ -83,9 +84,8 @@ nav img{
     border-radius: 5px;
 }
 .btn:hover{
-    border: 1px solid #3b6f4c;
-    background: #3b6f4c;
-    transition: 0.5s;
+    background: #ff5500;
+    transition: 0.25s;
 }
 nav .fa{
     display: none;
@@ -93,109 +93,422 @@ nav .fa{
 .nav-links ul{
     padding: 30px;
 }
-
-.plan{
-    padding: 5%;
+/*Home*/
+.laws-home{
+    padding: 50px 200px 75px 200px;
+    text-align: center;}
+.laws-hmain{
+    font-size: 30px;
+    padding-bottom: 20px;
 }
-.plan p{
+.find a{
     font-size: 20px;
-    padding: 3% 1%;
+    cursor: pointer;
+    color: #ff5500;
+    text-decoration: none;
+}
+.find a:hover{
+    color: #ffaf87;
 }
 
-.laws{
-    width: 80%;
-    margin: auto;
+.homepage-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px 100px 50px;
+}
+
+.box {
+    flex: 0 1 48%; 
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
     text-align: center;
 }
-.laws h1{
-    padding-bottom: 3%;
+
+.box h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ff5500;
 }
-h1{
+
+.box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 36px;
-    font-weight: 600;
-
+    margin: 0 20px;
 }
 
-.container {
+.or h2 {
+    margin: 0;
+}
+
+.boxes-home{
+    text-decoration: none;
+    color: #ff5500;
+}
+
+.boxes-home:hover{
+    color: #ffaf87;
+}
+/*About Us*/
+
+.about-main{
+    font-size: 35px;
+    color: #ff5500;
+    padding: 15px;
+}
+
+.about-middle{
+    font-size: 27.5px;
+    text-align: justify;
+    padding: 25px;
+}
+
+.about-caption{
+    font-size: 20px;
+    padding: 20px;
+    color: #ff5500;
+}
+
+.about-gallery {
+    text-align: center;
+    padding: 50px 150px;
+}
+
+.about-gallery h2 {
+    margin-bottom: 30px;
+    font-weight: 525;
+    font-size: 30px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 25px; 
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.team {
+    text-align: center;
+    padding: 50px;
+}
+
+.team h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #ff5500;
+}
+
+.team-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    margin-top: 0;
+}
+
+.partners-section {
+    padding: 30px 200px 150px 200px;
+}
+
+.partner-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.partner-text {
+    flex: 1;
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+.partners-section h2{
+    color: #ff5500;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.partner-image {
+    flex: 1;
+    text-align: center;
+}
+
+.partner-image img {
+    max-width: 100%;
+    height: auto;
+}
+/*Current Laws*/
+.infographic-container {
     max-width: 800px;
-    margin: 0 auto;
+    height: 440px;
+    margin: 30px auto 95px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+.infographic-container:hover{
+    box-shadow: 0 0 100px rgba(126, 126, 126, 0.5);
+    transition: 0.25s;
+}
+.laws-title{
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
 }
 
-.row {
+.tab{
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.tab:hover {
+    background-color: #ffdac7;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
 }
 
-.law-col {
-    width: calc(50% - 20px);
-    background-color: #d2f3de;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
+
+.tab-text {
+    flex: 1;
+    text-align: justify;
+    font-size: 15px;
+}
+.tab-text h2{
     text-align: center;
-    display: flex;
-    align-items: center;
+    padding-bottom: 10px;
 }
 
-.petition h1{
-    padding: 3%;
+.tab-icon {
+    margin-left: 10px;
+    width: 27%;
+    text-align: center;
+    color: #ff5500;
 }
-.petition {
+
+/*Advocacy*/
+.petition-container {
+    max-width: 600px;
+    margin: 0 auto 44px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+.petition-container:hover{
+    box-shadow: 0 0 100px rgba(126, 126, 126, 0.5);
+    transition: 0.25s;
+}
+
+
+.petition-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 30px;
+}
+
+.petition-form {
     display: flex;
     flex-direction: column;
-    align-items: center; 
 }
 
-.textbox {
-    width: 60%; 
-    height: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-size: 16px;
-    outline: none; 
-    text-align: center;
-}
-
-.row-centered {
-    display: flex;
-    justify-content: center;
-}
-.contacts{
-    padding: 5%;
-}
-.contact-section {
-    width: 600px;
-    margin: 3% auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #d2f3de;
-}
-
-.contact-details {
+.form-group {
     margin-bottom: 15px;
 }
 
-.contact-label {
+.form-label {
     font-weight: bold;
-    color: #333;
-}
-
-.contact-value {
     color: #666;
 }
 
-.separator {
-    height: 1px;
-    background-color: #ccc;
-    margin: 15px 0;
+.form-input {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #ff5500;
+    color: white;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #f98449;
+    transition: 0.25s;
+}
+
+/*Join Us*/
+.contact-container {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+.contact-container:hover{
+    box-shadow: 0 0 100px rgba(126, 126, 126, 0.5);
+    transition: 0.25s;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h1{
+    padding-bottom: 30px;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.contact-item {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.contact-item i {
+    margin-right: 10px;
+}
+
+.contact-form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-form h2{
+    padding-bottom: 15px;
+}
+
+.message-input {
+    width: 96%;
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #ff5500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #f98449;
+    transition: 0.25s;
+}
+
+/*Contact Footer*/
+.contact-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+.info-item i {
+    margin-right: 10px;
+}
+
+.social-links {
+    font-size: 24px;
+}
+
+.social-link {
+    color: #fff;
+    margin: 0 5px;
+}
+
+.social-link:hover {
+    color: #ccc;
+}
+
+
+/*Responsive*/
 @media(max-width:700px){
     .text-box p{
         font-size: 20px;

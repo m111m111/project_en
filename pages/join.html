@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioJuris</title>
+    <link rel="stylesheet" href="../style.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+</head> 
+<body>
+    <nav>
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="../images/banner_join.mp4" type="video/mp4">
+        </video>
+        <a href="../index.html"><img src="../images/logo_text.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="laws.html">Current Laws</a></li>
+                <li><a href="advocacy.html">Advocacy</a></li>
+                <li><a href="join.html">Join Us</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h1>Contact us and get involved</h1>
+            <div class="contact-row">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+1234567890</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>biojuris@gmail.com</span>
+                </div>
+            </div>
+            <div class="contact-row">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Ștefan cel Mare Street 1, Chișinău, Moldova</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <span>www.biojuris.com</span>
+                </div>
+            </div>
+            <div class="contact-row">
+                <div class="contact-item">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </div>
+            </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+            <h2>Leave a Message</h2>
+            <textarea id="message-input" class="message-input" placeholder="Type your message here..."></textarea>
+            <button id="submit-button" class="submit-button" type="submit">Send</button>
+        </form>
+    </div>
+
+ 
+<script src="../script.js"></script>
+</body>
+</html>
